@@ -83,6 +83,11 @@
   align-items: start;
 }
 
+.trending-section {
+  display: grid;
+  align-items: end;
+}
+
 .announcements-card,
 .trending-card {
   background-color: #fff;
