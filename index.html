@@ -1,137 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <div class="container">
-
-    <div class="sidebar">
-      <div class="logo">Logo</div>
-      <div class="nav">
-        <ul>
-          <li>Button</li>
-          <li>Button</li>
-          <li>Button</li>
-          <li>Button</li>
-          <li>Button</li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo">Logo</div>
+        <div class="nav">
+          <ul>
+            <li>Button</li>
+            <li>Button</li>
+            <li>Button</li>
+            <li>Button</li>
+            <li>Button</li>
+          </ul>
+        </div>
+        <div class="secondary-nav">
+          <ul>
+            <li>Button</li>
+            <li>Button</li>
+            <li>Button</li>
+            <li>Button</li>
+            <li>Button</li>
+          </ul>
+        </div>
       </div>
-      <div class="secondary-nav">
-        <ul>
-          <li>Button</li>
-          <li>Button</li>
-          <li>Button</li>
-          <li>Button</li>
-          <li>Button</li>
-        </ul>
+      <div class="header">
+        <div class="top-bar">
+          <img src="img/default.png" alt="search icon" />
+          <input type="search" />
+          <img src="img/default.png" alt="notifications icon" />
+          <img src="img/default.png" alt="user avatar" />
+          <a href="#">Morgan Oakley</a>
+        </div>
+        <div class="controls">
+          <div class="user-greeting">
+            <img src="img/default.png" alt="user avatar" />
+            <div class="hi-user">
+              <p>Hi there,</p>
+              <p>Morgan Oakley (@morgan)</p>
+            </div>
+          </div>
+          <div class="media-buttons">
+            <button id="upload-button">Upload</button>
+            <button id="new-button">New</button>
+            <button id="share-button">Share</button>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="header">Header</div>
-
-    <div class="content">
-      <div class="main-content">
+      <div class="content">
         <div class="section-title">Your Projects</div>
+        <div class="section-title">Announcements</div>
         <div class="projects-grid">
           <div class="project-card">
             <h3>Project 01</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit corrupti magna commodo architecto
-              ipsam ab magni tempora odio minim vero excepturi magna.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Reprehenderit corrupti magna commodo architecto ipsam ab magni
+              tempora odio minim vero excepturi magna.
+            </p>
           </div>
           <div class="project-card">
             <h3>Project 01</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit corrupti magna commodo architecto
-              ipsam ab magni tempora odio minim vero excepturi magna.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Reprehenderit corrupti magna commodo architecto ipsam ab magni
+              tempora odio minim vero excepturi magna.
+            </p>
           </div>
           <div class="project-card">
             <h3>Project 01</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit corrupti magna commodo architecto
-              ipsam ab magni tempora odio minim vero excepturi magna.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Reprehenderit corrupti magna commodo architecto ipsam ab magni
+              tempora odio minim vero excepturi magna.
+            </p>
           </div>
           <div class="project-card">
             <h3>Project 01</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit corrupti magna commodo architecto
-              ipsam ab magni tempora odio minim vero excepturi magna.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Reprehenderit corrupti magna commodo architecto ipsam ab magni
+              tempora odio minim vero excepturi magna.
+            </p>
           </div>
           <div class="project-card">
             <h3>Project 01</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit corrupti magna commodo architecto
-              ipsam ab magni tempora odio minim vero excepturi magna.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Reprehenderit corrupti magna commodo architecto ipsam ab magni
+              tempora odio minim vero excepturi magna.
+            </p>
           </div>
           <div class="project-card">
             <h3>Project 01</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit corrupti magna commodo architecto
-              ipsam ab magni tempora odio minim vero excepturi magna.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Reprehenderit corrupti magna commodo architecto ipsam ab magni
+              tempora odio minim vero excepturi magna.
+            </p>
           </div>
         </div>
-      </div>
 
-      <div class="side-content">
-        <div class="announcements-section">
-          <div class="section-title">Announcements</div>
-          <div class="announcements-card">
+        <div class="side-content">
+          <div class="announcements-grid">
             <div class="announcement-entry">
               <h3>Site Maintenance</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit corrupti magna commodo
-                architecto
-                ipsam ab magni tempora odio minim vero excepturi magna.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Reprehenderit corrupti magna commodo architecto ipsam ab magni
+                tempora odio minim vero excepturi magna.
+              </p>
             </div>
             <div class="divider"></div>
             <div class="announcement-entry">
               <h3>Site Maintenance</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit corrupti magna commodo
-                architecto
-                ipsam ab magni tempora odio minim vero excepturi magna.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Reprehenderit corrupti magna commodo architecto ipsam ab magni
+                tempora odio minim vero excepturi magna.
+              </p>
             </div>
             <div class="divider"></div>
             <div class="announcement-entry">
               <h3>Site Maintenance</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit corrupti magna commodo
-                architecto
-                ipsam ab magni tempora odio minim vero excepturi magna.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Reprehenderit corrupti magna commodo architecto ipsam ab magni
+                tempora odio minim vero excepturi magna.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="trending-section">
           <div class="section-title">Trending</div>
-          <div class="trending-card">
+          <div class="trending-grid">
             <div class="trending-entry">
-              <img src="img/default.png" alt="avatar image">
+              <img src="img/default.png" alt="avatar image" />
               <h3>@tegan</h3>
               <p>World Peace Builder</p>
             </div>
             <div class="trending-entry">
-              <img src="img/default.png" alt="avatar image">
+              <img src="img/default.png" alt="avatar image" />
               <h3>@tegan</h3>
               <p>World Peace Builder</p>
             </div>
             <div class="trending-entry">
-              <img src="img/default.png" alt="avatar image">
+              <img src="img/default.png" alt="avatar image" />
               <h3>@tegan</h3>
               <p>World Peace Builder</p>
             </div>
             <div class="trending-entry">
-              <img src="img/default.png" alt="avatar image">
+              <img src="img/default.png" alt="avatar image" />
               <h3>@tegan</h3>
               <p>World Peace Builder</p>
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
-  </div>
-  </div>
-  </div>
-
-  </div>
-</body>
-
+  </body>
 </html>
