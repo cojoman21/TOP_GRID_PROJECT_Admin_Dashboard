@@ -25,13 +25,42 @@ p {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
   img {
     height: 25px;
   }
   .top-bar {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+
+    .search-area {
+      display: grid;
+      grid-template-columns: 1fr 9fr;
+      padding: 20px;
+    }
+
+    .user-area {
+      justify-self: end;
+      padding: 20px;
+    }
+
+    a {
+      margin: 0;
+      padding: 0 10px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    img {
+      padding: 0 10px;
+    }
+
+    input {
+      border: none;
+      border-radius: 15px;
+      background-color: #cfcfcf;
+    }
   }
   .controls {
     display: grid;
@@ -67,7 +96,8 @@ p {
 
     .media-buttons {
       grid-column: 2 / 3;
-      justify-self: center;
+      justify-self: end;
+      padding: 15px;
 
       button {
         height: 30px;
