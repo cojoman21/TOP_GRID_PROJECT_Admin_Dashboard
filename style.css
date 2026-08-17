@@ -1,5 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap");
+
+.roboto-heading {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 75;
+}
+
+.roboto-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 75;
+}
+
 * {
-  font-family: roboto;
   margin: 0;
   padding: 0;
 }
@@ -23,6 +40,7 @@ html {
   justify-items: start;
 
   .logo {
+    margin-top: 20px;
     margin-left: 15px;
     display: grid;
     grid-template-columns: 50px 1fr;
@@ -94,7 +112,7 @@ html {
     grid-template-columns: 30px 1fr 30px 50px 120px;
     align-items: center;
     justify-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
 
     a {
       text-decoration: none;
@@ -138,7 +156,7 @@ html {
       grid-template-rows: 1fr 1fr;
       align-items: center;
       p {
-        font-weight: bold;
+        font-weight: 900;
         font-size: 1.2em;
       }
       p:first-of-type {
@@ -210,7 +228,7 @@ html {
       margin-bottom: 0;
     }
     p {
-      font-size: 0.8em;
+      font-size: 0.9em;
       margin: 0;
     }
   }
