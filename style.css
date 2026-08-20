@@ -269,6 +269,7 @@ html {
     display: grid;
     grid-template-rows: 30px 130px 1fr;
     justify-items: end;
+    min-width: 300px;
     background-color: #fff;
     border-left: 8px solid #f0b429;
     border-radius: 8px;
