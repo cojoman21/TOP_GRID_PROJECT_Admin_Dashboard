@@ -27,7 +27,7 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: minmax(250px, 280px) 1fr;
+  grid-template-columns: minmax(70px, 280px) 1fr;
   grid-template-rows: 150px 1fr;
   height: 100vh;
 }
@@ -40,6 +40,9 @@ html {
   background-color: #1992d4;
   justify-items: start;
   align-items: start;
+
+  container-type: inline-size;
+  container-name: sidebar;
 
   .logo {
     margin-top: 20px;
@@ -104,6 +107,34 @@ html {
     align-items: center;
     gap: 25px;
   }
+
+  .nav a,
+  .secondary-nav a,
+  .logo h1 {
+    transform-origin: left center;
+    transition:
+      transform 0.25s ease,
+      opacity 0.2s ease,
+      max-width 0.25s ease;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+  }
+}
+
+@container sidebar (max-width: 150px) {
+  .logo h1,
+  .nav a,
+  .secondary-nav a {
+    transform: scaleX(0);
+    opacity: 0;
+    min-width: 0;
+  }
+  .nav-entry {
+    transition: grid-template-columns 0.25s ease;
+    grid-template-columns: 25px 0fr;
+  }
 }
 
 .header {
@@ -112,7 +143,10 @@ html {
   display: grid;
   grid-template-rows: 70px 1fr;
   background-color: #fff;
-  box-shadow: 3px 3px 3px #00000026; /* TODO */
+
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
 
   img {
     height: 50px;
@@ -164,8 +198,6 @@ html {
     justify-items: center;
     padding: 10px 20px;
 
-    box-shadow: 3px 3px 3px #00000026;
-
     img {
       height: 60px;
     }
@@ -177,7 +209,7 @@ html {
       align-items: center;
 
       p {
-        font-size: 1.3em;
+        font-size: 1.4em;
       }
       p:first-of-type {
         font-size: 0.9em;
@@ -212,7 +244,7 @@ html {
   .section-title {
     margin-top: 15px;
     margin-bottom: 0px;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
 
@@ -234,21 +266,30 @@ html {
   gap: 15px;
 
   .project-card {
+    display: grid;
+    grid-template-rows: 30px 130px 1fr;
+    justify-items: end;
     background-color: #fff;
-    border-left: 4px solid #f5a623;
-    border-radius: 6px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
-    padding: 15px;
+    border-left: 8px solid #f0b429;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    padding: 25px;
     border-top: none;
     border-right: none;
     border-bottom: none;
     h3 {
       margin-bottom: 0;
-      font-size: 1em;
+      font-size: 1.2em;
+      justify-self: start;
+      align-self: end;
     }
     p {
       margin: 0;
-      font-size: 0.9em;
+      font-size: 1em;
+      justify-self: start;
+    }
+    svg {
+      height: 25px;
     }
   }
 }
@@ -257,8 +298,8 @@ html {
 .trending-grid {
   box-sizing: border-box;
   background-color: #fff;
-  border-radius: 6px;
-  box-shadow: 3px 3px 3px #00000026;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   padding: 30px 20px;
   border-top: none;
   border-right: none;
